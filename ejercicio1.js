@@ -32,7 +32,9 @@ function creaJugador(nombre, apellidos,nivel = 1,puntuacion = 1) {
         },
 
         reseteaJugador(){
-            alert(`El jugador ${this.name} ha sido eliminado`)
+            this.puntuacion = 1
+            this.nivel = 1
+            console.log(`El jugador ${this.name} ha sido eliminado`)
         }
 
 
@@ -43,12 +45,3 @@ function creaJugador(nombre, apellidos,nivel = 1,puntuacion = 1) {
 const jugador1 = creaJugador("Gonzalo","Pulido Sánchez",30,200);
 const jugador2 = creaJugador("Manuel","Rivas",100,10000000);
 const listaJugadores = [jugador1,jugador2]
-
-
-jugador1.sumarPuntuacion
-
-
-
-
-
-
